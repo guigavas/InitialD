@@ -47,3 +47,9 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Arquivos de output ou temporários a serem ignorados
+*.html
+*.pdf
+*.pptx
+*_files/
