@@ -14,3 +14,22 @@ library(openxlsx)
 library(tidyverse)
 ```
 
+
+
+## Importação dos dados
+
+Baixei o arquivo `siteautoveiculos2024.xlsx`, na pasta `emplacamentos_2024/dados/`.
+
+```{r}
+#| label: importa
+
+Nacionais <-
+  openxlsx::read.xlsx(
+    xlsxFile = "dados/siteautoveiculos2024.xlsx", 
+    sheet = 2, 
+    rows = 5:17
+  )
+
+Nacionais
+```
+
