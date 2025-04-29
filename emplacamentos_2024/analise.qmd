@@ -1,0 +1,16 @@
+---
+title: "Análise de dados Emplacamentos 2024"
+author: "Guilherme Vasconcelos"
+format: html
+editor: source
+lang: pt-BR
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(openxlsx)
+library(tidyverse)
+```
+
