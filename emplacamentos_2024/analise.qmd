@@ -12,6 +12,7 @@ lang: pt-BR
 
 library(openxlsx)
 library(tidyverse)
+library(kableExtra)
 ```
 
 
@@ -39,8 +40,11 @@ importados.bruto <-
     rows = 25:36
   )
 
-nacionais.bruto
-importados.bruto
+nacionais.bruto |> 
+  kable()
+
+importados.bruto|> 
+  kable()
 ```
 
 
