@@ -33,3 +33,20 @@ Nacionais <-
 Nacionais
 ```
 
+
+
+
+
+## Crítica dos dados
+
+
+
+## Faxina dos dados
+
+
+
+## Análise descritiva dos dados
+
+
+
+
