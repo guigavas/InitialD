@@ -23,14 +23,14 @@ Baixei o arquivo `siteautoveiculos2024.xlsx`, na pasta `emplacamentos_2024/dados
 ```{r}
 #| label: importa
 
-Nacionais <-
+nacionais.bruto <-
   openxlsx::read.xlsx(
     xlsxFile = "dados/siteautoveiculos2024.xlsx", 
     sheet = 2, 
     rows = 6:17
   )
 
-Nacionais
+nacionais.bruto
 ```
 
 
