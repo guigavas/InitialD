@@ -20,6 +20,8 @@ library(tidyverse)
 
 Baixei o arquivo `siteautoveiculos2024.xlsx`, na pasta `emplacamentos_2024/dados/`.
 
+Importando os dados do arquivo
+
 ```{r}
 #| label: importa
 
