@@ -27,7 +27,7 @@ Nacionais <-
   openxlsx::read.xlsx(
     xlsxFile = "dados/siteautoveiculos2024.xlsx", 
     sheet = 2, 
-    rows = 5:17
+    rows = 6:17
   )
 
 Nacionais
