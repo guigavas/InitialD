@@ -66,4 +66,18 @@ importados.bruto|>
 
 
 
+## To-do list
 
+
+Ó: dever de casa: procurar funções no tidyverse para
+- preencher uma coluna com o último valor não missing (para X1 e X2)
+- transformar X1 e X2 em algum tipo de par de variáveis tipo e classe
+- descartar as linhas com os totais e totais parciais 
+- juntar os dois dataframes, com uma variável nacional/importado adicional
+- pivotar o dataframe de largo pra longo
+
+Próximos passos
+- definir quais críticas fazer no dataframe resultante
+- definir quais descritivas fazer
+- se não for fazer nenhuma análise, definir como será o relatório final
+- concluir o primeiro mini projeto
