@@ -52,7 +52,39 @@ importados.bruto|>
 ## Manunseio dos dados
 
 ```{r}
+#| label: monta-principal
 
+emplacamentos <-
+  bind_rows(
+    nacionais.bruto |> 
+      mutate(
+        origem = "nacional",
+        .before = everything()
+      ),
+    importados.bruto |> 
+      mutate(
+        origem = "importado",
+        .before = everything()
+      )
+  ) |> 
+  tidyr::fill(X1) |> 
+  rename(
+    categoria = X1,
+    tipo = X2
+  ) |> 
+  filter(
+    !is.na(tipo)
+    | categoria == "Ônibus" 
+  ) |> 
+  mutate(
+    tipo = if_else(is.na(tipo), categoria, tipo)
+  ) |> 
+  select(- Total.Ano) |> 
+  pivot_longer(
+    cols = Jan:Dez,
+    names_to = "mês",
+    values_to = "emplacamentos"
+  )
 ```
 
 
@@ -67,14 +99,6 @@ importados.bruto|>
 
 
 ## To-do list
-
-
-Ó: dever de casa: procurar funções no tidyverse para
-- preencher uma coluna com o último valor não missing (para X1 e X2)
-- transformar X1 e X2 em algum tipo de par de variáveis tipo e classe
-- descartar as linhas com os totais e totais parciais 
-- juntar os dois dataframes, com uma variável nacional/importado adicional
-- pivotar o dataframe de largo pra longo
 
 Próximos passos
 - definir quais críticas fazer no dataframe resultante
