@@ -49,13 +49,16 @@ importados.bruto|>
 
 
 
+## Manunseio dos dados
+
+```{r}
+
+```
+
 
 
 ## Crítica dos dados
 
-
-
-## Faxina dos dados
 
 
 
