@@ -108,7 +108,12 @@ O conjunto de dados ficou do jeito esperado.
 
 ## Crítica dos dados
 
+Nessa fase, a ideia seria verificar consistência entre os tipos das variáveis, 
+presença de missing, consistência de enconding/caracteres especiais, ausência 
+de padronização dos dados (maça e maca).
 
+Neste caso, como a base de dados apresenta de forma limpa, não apresentou 
+críticas.
 
 
 ## Análise descritiva dos dados
