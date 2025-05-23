@@ -25,6 +25,7 @@ Importando os dados do arquivo
 
 ```{r}
 #| label: importa
+#| cache: true
 
 nacionais.bruto <-
   openxlsx::read.xlsx(
@@ -53,6 +54,8 @@ importados.bruto|>
 
 ```{r}
 #| label: monta-principal
+#| cache: true
+#| dependson: importa
 
 emplacamentos <-
   bind_rows(
