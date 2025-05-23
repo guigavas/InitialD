@@ -85,6 +85,9 @@ emplacamentos <-
     names_to = "mês",
     values_to = "emplacamentos"
   )
+emplacamentos |> 
+  kable() |> 
+  scroll_box(height = "10cm")
 ```
 
 
