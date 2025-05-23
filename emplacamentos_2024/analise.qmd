@@ -52,6 +52,15 @@ importados.bruto|>
 
 ## Manunseio dos dados
 
+Foi necessária criar uma etapa de organização das base (i) nacional e (ii) importado, de largo para longo, que inclui:
+
+- Exclusão das linhas de totais e sub-totais 
+- Junção das base para uma tabela única
+- Criação de colunas `origem` e `categoria`
+- Pivotar de largo para longo
+
+
+
 ```{r}
 #| label: monta-principal
 #| cache: true
@@ -92,6 +101,8 @@ emplacamentos |>
   kable() |> 
   scroll_box(height = "10cm")
 ```
+
+O conjunto de dados ficou do jeito esperado.
 
 
 
