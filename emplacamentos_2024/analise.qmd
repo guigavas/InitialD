@@ -124,6 +124,7 @@ críticas.
 
 Próximos passos
 - definir quais críticas fazer no dataframe resultante
-- definir quais descritivas fazer
+- definir quais descritivas fazer, anotar que tipo de análise daria para fazer 
+  com os dados
 - se não for fazer nenhuma análise, definir como será o relatório final
 - concluir o primeiro mini projeto
